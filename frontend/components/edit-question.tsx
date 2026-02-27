@@ -53,13 +53,13 @@ const EditQuestion = ({
         transition={{ delay: 0.1 }}
       >
         <Textarea
-          className={`w-full p-0 pb-[72px] rounded-xl !text-lg focus-visible:ring-0 resize-none !placeholder-gray-400 !bg-[#35363a] border-none h-50 ${textareaClassName}`}
+          className={`w-full p-0 pb-[72px] rounded-xl !text-lg focus-visible:ring-0 resize-none !placeholder-gray-400 !bg-[#18181B] border-none h-50 ${textareaClassName}`}
           placeholder={"Ask me anything..."}
           value={value}
           onChange={(e) => setValue(e.target.value)}
           onKeyDown={handleKeyDown}
         />
-        <div className="flex justify-end items-center absolute bottom-0 m-px w-[calc(100%-4px)] rounded-b-xl bg-[#35363a]">
+        <div className="flex justify-end items-center absolute bottom-0 m-px w-[calc(100%-4px)] rounded-b-xl bg-[#18181B]">
           <div className="flex items-center gap-x-2">
             <Button
               onClick={handleCancel}

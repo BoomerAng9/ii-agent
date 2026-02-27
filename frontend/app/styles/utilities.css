@@ -10,9 +10,21 @@
   .bg-gradient-skyblue-lavender {
     background: linear-gradient(
       0deg,
-      hsla(193, 65%, 83%, 1) 24%,
-      hsla(284, 71%, 82%, 1) 80%
+      hsla(263, 90%, 66%, 1) 24%,
+      hsla(263, 70%, 76%, 1) 80%
     );
+  }
+
+  /* A.I.M.S. Violet Glow */
+  .aims-glow {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.15),
+                0 0 40px rgba(139, 92, 246, 0.05);
+  }
+
+  .aims-glass {
+    background: rgba(139, 92, 246, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(139, 92, 246, 0.12);
   }
   
   /* Additional Gradient Presets */

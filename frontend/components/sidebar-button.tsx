@@ -93,7 +93,7 @@ const SidebarButton = ({ className, workspaceInfo }: SidebarButtonProps) => {
         size="icon"
         onClick={toggleSidebar}
         className={cn(
-          "fixed top-4 left-4 z-50 bg-[#1e1f23] border border-[#3A3B3F] hover:bg-[#2a2b30] p-2",
+          "fixed top-4 left-4 z-50 bg-[#111113] border border-[#1F1F23] hover:bg-[#18181B] p-2",
           className
         )}
       >
@@ -116,11 +116,11 @@ const SidebarButton = ({ className, workspaceInfo }: SidebarButtonProps) => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="fixed left-0 top-0 h-full w-[300px] bg-[#1e1f23] border-[#3A3B3F] z-100 overflow-auto"
+              className="fixed left-0 top-0 h-full w-[300px] bg-[#111113] border-[#1F1F23] z-100 overflow-auto"
             >
-              <div className="p-4 border-b border-[#3A3B3F] flex items-center gap-3">
+              <div className="p-4 border-b border-[#1F1F23] flex items-center gap-3">
                 <div
-                  className="cursor-pointer flex items-center justify-center w-8 h-8 bg-[#2a2b30] rounded-md"
+                  className="cursor-pointer flex items-center justify-center w-8 h-8 bg-[#18181B] rounded-md"
                   onClick={toggleSidebar}
                 >
                   <PanelLeft className="h-5 w-5 text-white" />
@@ -136,7 +136,7 @@ const SidebarButton = ({ className, workspaceInfo }: SidebarButtonProps) => {
                   <span
                     className={`text-white text-lg font-semibold font-serif ${kumbh_sans.className}`}
                   >
-                    II-Agent
+                    A.I.M.S.
                   </span>
                 </div>
               </div>
@@ -159,10 +159,10 @@ const SidebarButton = ({ className, workspaceInfo }: SidebarButtonProps) => {
                         key={session.id}
                         onClick={() => handleSessionClick(session.id)}
                         className={cn(
-                          "p-2 rounded-md cursor-pointer hover:bg-[#2a2b30] transition-colors",
+                          "p-2 rounded-md cursor-pointer hover:bg-[#18181B] transition-colors",
                           activeSessionId === session.id ||
                             workspaceInfo?.includes(session.id)
-                            ? "bg-[#2a2b30] border border-[#3A3B3F]"
+                            ? "bg-[#18181B] border border-[#1F1F23]"
                             : ""
                         )}
                       >

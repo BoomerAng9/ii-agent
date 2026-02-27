@@ -262,7 +262,7 @@ const CodeEditor = ({
 
   return (
     <div
-      className={`flex flex-col h-[calc(100vh-178px)] rounded-xl border border-[#3A3B3F] shadow-sm overflow-hidden ${className}`}
+      className={`flex flex-col h-[calc(100vh-178px)] rounded-xl border border-[#1F1F23] shadow-sm overflow-hidden ${className}`}
     >
       <div className="flex flex-1 h-full">
         {/* File Explorer */}

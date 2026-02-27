@@ -539,7 +539,7 @@ const ApiKeysDialog = ({
   return (
     <>
       <Dialog open={isOpen} onOpenChange={onClose}>
-        <DialogContent className="bg-[#1e1f23] border-[#3A3B3F] text-white sm:max-w-[700px]">
+        <DialogContent className="bg-[#111113] border-[#1F1F23] text-white sm:max-w-[700px]">
           <DialogHeader>
             <DialogTitle className="text-xl font-semibold">
               Configuration
@@ -576,10 +576,10 @@ const ApiKeysDialog = ({
                         handleSandboxConfigChange("mode", value)
                       }
                     >
-                      <SelectTrigger className="bg-[#35363a] border-[#ffffff0f] w-full">
+                      <SelectTrigger className="bg-[#18181B] border-[#ffffff0f] w-full">
                         <SelectValue placeholder="Select Sandbox Mode" />
                       </SelectTrigger>
-                      <SelectContent className="bg-[#35363a] border-[#ffffff0f]">
+                      <SelectContent className="bg-[#18181B] border-[#ffffff0f]">
                         <SelectItem value="local">Local</SelectItem>
                         <SelectItem value="docker">Docker</SelectItem>
                         <SelectItem value="e2b">E2B</SelectItem>
@@ -602,7 +602,7 @@ const ApiKeysDialog = ({
                             )
                           }
                           placeholder="Enter E2B Template ID"
-                          className="bg-[#35363a] border-[#ffffff0f]"
+                          className="bg-[#18181B] border-[#ffffff0f]"
                         />
                       </div>
 
@@ -620,7 +620,7 @@ const ApiKeysDialog = ({
                             )
                           }
                           placeholder="Enter E2B API Key"
-                          className="bg-[#35363a] border-[#ffffff0f]"
+                          className="bg-[#18181B] border-[#ffffff0f]"
                         />
                       </div>
                     </>
@@ -655,7 +655,7 @@ const ApiKeysDialog = ({
                         return (
                           <div
                             key={modelKey}
-                            className="flex items-center justify-between p-3 bg-[#35363a] rounded-md"
+                            className="flex items-center justify-between p-3 bg-[#18181B] rounded-md"
                           >
                             <div className="flex-1">
                               <div className="font-medium">{displayName}</div>
@@ -729,7 +729,7 @@ const ApiKeysDialog = ({
                         )
                       }
                       placeholder="Enter FireCrawl API Key"
-                      className="bg-[#35363a] border-[#ffffff0f]"
+                      className="bg-[#18181B] border-[#ffffff0f]"
                     />
                   </div>
 
@@ -749,7 +749,7 @@ const ApiKeysDialog = ({
                           )
                         }
                         placeholder="Enter FireCrawl Base URL"
-                        className="bg-[#35363a] border-[#ffffff0f]"
+                        className="bg-[#18181B] border-[#ffffff0f]"
                       />
                     </div>
                   )} */}
@@ -767,7 +767,7 @@ const ApiKeysDialog = ({
                         )
                       }
                       placeholder="Enter SerpAPI API Key"
-                      className="bg-[#35363a] border-[#ffffff0f]"
+                      className="bg-[#18181B] border-[#ffffff0f]"
                     />
                   </div>
 
@@ -784,7 +784,7 @@ const ApiKeysDialog = ({
                         )
                       }
                       placeholder="Enter Tavily API Key"
-                      className="bg-[#35363a] border-[#ffffff0f]"
+                      className="bg-[#18181B] border-[#ffffff0f]"
                     />
                   </div>
 
@@ -798,7 +798,7 @@ const ApiKeysDialog = ({
                         handleSearchConfigChange("jina_api_key", e.target.value)
                       }
                       placeholder="Enter Jina API Key"
-                      className="bg-[#35363a] border-[#ffffff0f]"
+                      className="bg-[#18181B] border-[#ffffff0f]"
                     />
                   </div>
                 </TabsContent>
@@ -816,10 +816,10 @@ const ApiKeysDialog = ({
                             )
                           }
                         >
-                          <SelectTrigger className="bg-[#35363a] border-[#ffffff0f] w-full">
+                          <SelectTrigger className="bg-[#18181B] border-[#ffffff0f] w-full">
                             <SelectValue placeholder="Select Media Provider" />
                           </SelectTrigger>
-                          <SelectContent className="bg-[#35363a] border-[#ffffff0f]">
+                          <SelectContent className="bg-[#18181B] border-[#ffffff0f]">
                             <SelectItem value="gemini">
                               Google AI Studio
                             </SelectItem>
@@ -844,7 +844,7 @@ const ApiKeysDialog = ({
                               )
                             }
                             placeholder="Enter Google AI Studio API Key"
-                            className="bg-[#35363a] border-[#ffffff0f]"
+                            className="bg-[#18181B] border-[#ffffff0f]"
                           />
                         </div>
                       ) : (
@@ -864,7 +864,7 @@ const ApiKeysDialog = ({
                                 )
                               }
                               placeholder="Enter Google Cloud Project ID"
-                              className="bg-[#35363a] border-[#ffffff0f]"
+                              className="bg-[#18181B] border-[#ffffff0f]"
                             />
                           </div>
 
@@ -881,7 +881,7 @@ const ApiKeysDialog = ({
                                 )
                               }
                               placeholder="Enter Google Cloud location/region"
-                              className="bg-[#35363a] border-[#ffffff0f]"
+                              className="bg-[#18181B] border-[#ffffff0f]"
                             />
                           </div>
 
@@ -900,7 +900,7 @@ const ApiKeysDialog = ({
                                 )
                               }
                               placeholder="Enter GCS bucket URI (e.g., gs://my-bucket-name)"
-                              className="bg-[#35363a] border-[#ffffff0f]"
+                              className="bg-[#18181B] border-[#ffffff0f]"
                             />
                           </div>
                         </>
@@ -934,7 +934,7 @@ const ApiKeysDialog = ({
                             )
                           }
                           placeholder="Enter API Key for audio services"
-                          className="bg-[#35363a] border-[#ffffff0f]"
+                          className="bg-[#18181B] border-[#ffffff0f]"
                         />
                       </div>
 
@@ -951,7 +951,7 @@ const ApiKeysDialog = ({
                             )
                           }
                           placeholder="Enter Azure OpenAI endpoint"
-                          className="bg-[#35363a] border-[#ffffff0f]"
+                          className="bg-[#18181B] border-[#ffffff0f]"
                         />
                       </div>
 
@@ -970,7 +970,7 @@ const ApiKeysDialog = ({
                             )
                           }
                           placeholder="Enter Azure API version"
-                          className="bg-[#35363a] border-[#ffffff0f]"
+                          className="bg-[#18181B] border-[#ffffff0f]"
                         />
                       </div>
                     </>
@@ -1000,7 +1000,7 @@ const ApiKeysDialog = ({
                         )
                       }
                       placeholder="Enter Neon DB API Key"
-                      className="bg-[#35363a] border-[#ffffff0f]"
+                      className="bg-[#18181B] border-[#ffffff0f]"
                     />
                   </div>
 
@@ -1019,7 +1019,7 @@ const ApiKeysDialog = ({
                         )
                       }
                       placeholder="Enter OpenAI API Key"
-                      className="bg-[#35363a] border-[#ffffff0f]"
+                      className="bg-[#18181B] border-[#ffffff0f]"
                     />
                   </div>
 
@@ -1036,7 +1036,7 @@ const ApiKeysDialog = ({
                         )
                       }
                       placeholder="Enter Vercel API Key"
-                      className="bg-[#35363a] border-[#ffffff0f]"
+                      className="bg-[#18181B] border-[#ffffff0f]"
                     />
                   </div>
                 </TabsContent>
@@ -1065,7 +1065,7 @@ const ApiKeysDialog = ({
 
       {/* Edit/Add Model Dialog */}
       <Dialog open={isEditDialogOpen} onOpenChange={setIsEditDialogOpen}>
-        <DialogContent className="bg-[#1e1f23] border-[#3A3B3F] text-white sm:max-w-[600px]">
+        <DialogContent className="bg-[#111113] border-[#1F1F23] text-white sm:max-w-[600px]">
           <DialogHeader>
             <DialogTitle className="text-xl font-semibold">
               {editingConfig
@@ -1084,10 +1084,10 @@ const ApiKeysDialog = ({
                 value={selectedProvider}
                 onValueChange={handleProviderChange}
               >
-                <SelectTrigger className="bg-[#35363a] border-[#ffffff0f] w-full">
+                <SelectTrigger className="bg-[#18181B] border-[#ffffff0f] w-full">
                   <SelectValue placeholder="Select LLM Provider" />
                 </SelectTrigger>
-                <SelectContent className="bg-[#35363a] border-[#ffffff0f]">
+                <SelectContent className="bg-[#18181B] border-[#ffffff0f]">
                   <SelectItem value="anthropic">Anthropic</SelectItem>
                   <SelectItem value="openai">OpenAI</SelectItem>
                   <SelectItem value="gemini">Gemini</SelectItem>
@@ -1111,10 +1111,10 @@ const ApiKeysDialog = ({
                     }
                   }}
                 >
-                  <SelectTrigger className="bg-[#35363a] border-[#ffffff0f] w-full">
+                  <SelectTrigger className="bg-[#18181B] border-[#ffffff0f] w-full">
                     <SelectValue placeholder="Select Model" />
                   </SelectTrigger>
-                  <SelectContent className="bg-[#35363a] border-[#ffffff0f]">
+                  <SelectContent className="bg-[#18181B] border-[#ffffff0f]">
                     {PROVIDER_MODELS[
                       selectedProvider as keyof typeof PROVIDER_MODELS
                     ].map((model) => (
@@ -1140,7 +1140,7 @@ const ApiKeysDialog = ({
                   value={customModelName}
                   onChange={(e) => setCustomModelName(e.target.value)}
                   placeholder="Enter custom model name"
-                  className="bg-[#35363a] border-[#ffffff0f]"
+                  className="bg-[#18181B] border-[#ffffff0f]"
                 />
               </div>
             )}
@@ -1166,7 +1166,7 @@ const ApiKeysDialog = ({
                       }
                     }}
                     placeholder="Enter API Key"
-                    className="bg-[#35363a] border-[#ffffff0f]"
+                    className="bg-[#18181B] border-[#ffffff0f]"
                   />
                 </div>
               </div>
@@ -1192,7 +1192,7 @@ const ApiKeysDialog = ({
                       }
                     }}
                     placeholder="Enter API Key"
-                    className="bg-[#35363a] border-[#ffffff0f]"
+                    className="bg-[#18181B] border-[#ffffff0f]"
                     disabled={
                       selectedModel.model_name === "custom" &&
                       !customModelName.trim()
@@ -1217,7 +1217,7 @@ const ApiKeysDialog = ({
                       }
                     }}
                     placeholder="Enter Base URL (if using a proxy)"
-                    className="bg-[#35363a] border-[#ffffff0f]"
+                    className="bg-[#18181B] border-[#ffffff0f]"
                     disabled={
                       selectedModel.model_name === "custom" &&
                       !customModelName.trim()
@@ -1247,7 +1247,7 @@ const ApiKeysDialog = ({
                       }
                     }}
                     placeholder="Enter Gemini API Key"
-                    className="bg-[#35363a] border-[#ffffff0f]"
+                    className="bg-[#18181B] border-[#ffffff0f]"
                   />
                 </div>
               </div>
@@ -1273,7 +1273,7 @@ const ApiKeysDialog = ({
                       }
                     }}
                     placeholder="Enter Google Cloud Project ID"
-                    className="bg-[#35363a] border-[#ffffff0f]"
+                    className="bg-[#18181B] border-[#ffffff0f]"
                   />
                 </div>
                 <div className="space-y-2">
@@ -1294,7 +1294,7 @@ const ApiKeysDialog = ({
                       }
                     }}
                     placeholder="Enter Vertex AI Region (e.g., us-central1)"
-                    className="bg-[#35363a] border-[#ffffff0f]"
+                    className="bg-[#18181B] border-[#ffffff0f]"
                   />
                 </div>
               </div>
@@ -1320,7 +1320,7 @@ const ApiKeysDialog = ({
                       }
                     }}
                     placeholder="Enter Azure OpenAI endpoint"
-                    className="bg-[#35363a] border-[#ffffff0f]"
+                    className="bg-[#18181B] border-[#ffffff0f]"
                   />
                 </div>
                 <div className="space-y-2">
@@ -1341,7 +1341,7 @@ const ApiKeysDialog = ({
                       }
                     }}
                     placeholder="Enter API Key"
-                    className="bg-[#35363a] border-[#ffffff0f]"
+                    className="bg-[#18181B] border-[#ffffff0f]"
                   />
                 </div>
                 <div className="space-y-2">
@@ -1362,7 +1362,7 @@ const ApiKeysDialog = ({
                       }
                     }}
                     placeholder="Enter Azure API version"
-                    className="bg-[#35363a] border-[#ffffff0f]"
+                    className="bg-[#18181B] border-[#ffffff0f]"
                   />
                 </div>
               </div>

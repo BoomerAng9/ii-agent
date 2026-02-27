@@ -198,7 +198,7 @@ const ChatMessage = ({
                       return (
                         <div
                           key={`${message.id}-folder-${fileIndex}`}
-                          className="inline-block ml-auto bg-[#35363a] text-white rounded-2xl px-4 py-3 border border-gray-700 shadow-sm"
+                          className="inline-block ml-auto bg-[#18181B] text-white rounded-2xl px-4 py-3 border border-gray-700 shadow-sm"
                         >
                           <div className="flex items-center gap-3">
                             <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-xl">
@@ -252,7 +252,7 @@ const ChatMessage = ({
                     return (
                       <div
                         key={`${message.id}-file-${fileIndex}`}
-                        className="inline-block ml-auto bg-[#35363a] text-white rounded-2xl px-4 py-3 border border-gray-700 shadow-sm"
+                        className="inline-block ml-auto bg-[#18181B] text-white rounded-2xl px-4 py-3 border border-gray-700 shadow-sm"
                       >
                         <div className="flex items-center gap-3">
                           <div
@@ -280,7 +280,7 @@ const ChatMessage = ({
               <div
                 className={`inline-block text-left rounded-lg ${
                   message.role === "user"
-                    ? "bg-[#35363a] p-3 max-w-[80%] text-white border border-[#3A3B3F] shadow-sm whitespace-pre-wrap"
+                    ? "bg-[#18181B] p-3 max-w-[80%] text-white border border-[#1F1F23] shadow-sm whitespace-pre-wrap"
                     : "text-white"
                 } ${
                   state.editingMessage?.id === message.id
@@ -377,12 +377,12 @@ const ChatMessage = ({
             <div className="flex gap-x-2 items-center bg-[#25BA3B1E] text-green-600 text-sm p-2 rounded-full">
               <div className="flex gap-x-2 items-center">
                 <Check className="size-4" />
-                <span>II-Agent has completed the current task.</span>
+                <span>A.I.M.S. has completed the current task.</span>
               </div>
             </div>
             {state.toolSettings?.enable_reviewer && (
               <div
-                className={`group cursor-pointer flex items-start gap-2 px-3 py-2 bg-[#35363a] rounded-xl backdrop-blur-sm 
+                className={`group cursor-pointer flex items-start gap-2 px-3 py-2 bg-[#18181B] rounded-xl backdrop-blur-sm 
       shadow-sm
       transition-all duration-200 ease-out
       hover:shadow-[0_2px_8px_rgba(0,0,0,0.24)]
@@ -393,7 +393,7 @@ const ChatMessage = ({
                   <div className="flex items-center gap-x-1.5 flex-1">
                     <SearchCheck className="size-5 text-white" />
                     <span className="text-neutral-100 flex-1 font-medium group-hover:text-white">
-                      Allow II-Agent to review the results
+                      Allow A.I.M.S. to review the results
                     </span>
                   </div>
                   <Button
@@ -413,7 +413,7 @@ const ChatMessage = ({
         {state.isStopped && (
           <div className="flex gap-x-2 items-center bg-[#ffbf361f] text-yellow-300 text-sm p-2 rounded-full">
             <CircleStop className="size-4" />
-            <span>II-Agent has stopped, send a new message to continue.</span>
+            <span>A.I.M.S. has stopped, send a new message to continue.</span>
           </div>
         )}
 
@@ -447,7 +447,7 @@ const ChatMessage = ({
                   <div className="h-2 w-2 bg-white rounded-full"></div>
                 </div>
                 <span className="text-white">
-                  II-Agent is replaying the task...
+                  A.I.M.S. is replaying the task...
                 </span>
               </div>
               <div className="flex gap-2">

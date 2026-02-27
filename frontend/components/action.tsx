@@ -343,7 +343,7 @@ const Action = ({ workspaceInfo, type, value, onClick }: ActionProps) => {
   return (
     <div
       onClick={onClick}
-      className={`group cursor-pointer flex items-start gap-2 px-3 py-2 bg-[#35363a] rounded-xl backdrop-blur-sm 
+      className={`group cursor-pointer flex items-start gap-2 px-3 py-2 bg-[#18181B] rounded-xl backdrop-blur-sm 
       shadow-sm
       transition-all duration-200 ease-out
       hover:bg-neutral-800

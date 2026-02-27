@@ -3,8 +3,8 @@ import "./globals.css";
 import Providers from "@/providers";
 
 export const metadata: Metadata = {
-  title: "II-Agent",
-  description: "II-Agent is a tool for in-depth analysis and research.",
+  title: "A.I.M.S. | AI Managed Solutions",
+  description: "Think It. Prompt It. Let's Build It. Production-ready applications powered by orchestrated AI agents.",
 };
 
 export default function RootLayout({

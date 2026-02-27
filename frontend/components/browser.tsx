@@ -15,7 +15,7 @@ const Browser = React.memo(
 
     return (
       <div
-        className={`h-[calc(100vh-178px)] border border-[#3A3B3F] rounded-xl overflow-hidden shadow-sm ${className}`}
+        className={`h-[calc(100vh-178px)] border border-[#1F1F23] rounded-xl overflow-hidden shadow-sm ${className}`}
       >
         <div className="flex items-center gap-3 px-3 py-2.5 bg-black/80 border-b border-neutral-800">
           <div className="flex items-center gap-1.5">
@@ -26,7 +26,7 @@ const Browser = React.memo(
             </div>
           </div>
           <div className="flex-1 flex items-center overflow-hidden">
-            <div className="bg-[#35363a] px-3 py-1.5 rounded-lg w-full flex items-center gap-2 group transition-colors">
+            <div className="bg-[#18181B] px-3 py-1.5 rounded-lg w-full flex items-center gap-2 group transition-colors">
               <Globe className="h-3.5 w-3.5 text-white flex-shrink-0" />
               <span className="text-sm text-white truncate flex-1 font-medium">
                 {url}

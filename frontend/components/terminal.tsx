@@ -56,7 +56,7 @@ const Terminal = (
         term.open(container);
         fitAddon.fit();
 
-        term.writeln(chalk.hex("#BAE9F4")("Welcome to II-Agent!"));
+        term.writeln(chalk.hex("#8B5CF6")("Welcome to A.I.M.S."));
         prompt(term);
 
         term.onKey(({ key, domEvent }) => {
@@ -150,7 +150,7 @@ const Terminal = (
   return (
     <div
       className={clsx(
-        "bg-black/80 border border-[#3A3B3F] shadow-sm p-4 h-[calc(100vh-178px)] rounded-xl overflow-auto",
+        "bg-black/80 border border-[#1F1F23] shadow-sm p-4 h-[calc(100vh-178px)] rounded-xl overflow-auto",
         className
       )}
     >

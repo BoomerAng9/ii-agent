@@ -391,12 +391,12 @@ export default function HomeContent() {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#191E1B]">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#09090B]">
       <SidebarButton />
       {!isInChatView && (
         <Image
           src="/logo-only.png"
-          alt="II-Agent Logo"
+          alt="A.I.M.S. Logo"
           width={80}
           height={80}
           className="rounded-sm"
@@ -418,13 +418,13 @@ export default function HomeContent() {
           {isInChatView && (
             <Image
               src="/logo-only.png"
-              alt="II-Agent Logo"
+              alt="A.I.M.S. Logo"
               width={40}
               height={40}
               className="rounded-sm"
             />
           )}
-          {`II-Agent`}
+          {`A.I.M.S.`}
         </motion.h1>
         {isInChatView && isReplayMode ? (
           <div className="flex gap-x-2">
@@ -466,7 +466,7 @@ export default function HomeContent() {
           <AnimatePresence mode="wait">
             {!isInChatView ? (
               <QuestionInput
-                placeholder="Give II-Agent a task to work on..."
+                placeholder="Think It. Prompt It. Let's Build It..."
                 value={state.currentQuestion}
                 setValue={(value) =>
                   dispatch({ type: "SET_CURRENT_QUESTION", payload: value })
@@ -507,7 +507,7 @@ export default function HomeContent() {
                   handleReviewSession={handleReviewResult}
                 />
 
-                <div className="col-span-6 bg-[#1e1f23] border border-[#3A3B3F] p-4 rounded-2xl">
+                <div className="col-span-6 bg-[#111113] border border-[#1F1F23] p-4 rounded-2xl">
                   <div className="pb-4 bg-neutral-850 flex items-center justify-between">
                     <div className="flex gap-x-4">
                       <Button

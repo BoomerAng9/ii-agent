@@ -128,7 +128,7 @@ const SettingsDrawer = ({ isOpen, onClose, onOpen }: SettingsDrawerProps) => {
       <motion.div
         className={`fixed top-0 right-0 h-full ${
           isOpen ? "w-[400px]" : "w-0"
-        } bg-[#1e1f23] z-50 shadow-xl overflow-auto`}
+        } bg-[#111113] z-50 shadow-xl overflow-auto`}
         initial={{ x: "100%" }}
         animate={{ x: isOpen ? 0 : "100%" }}
         transition={{ type: "spring", damping: 30, stiffness: 300 }}
@@ -171,10 +171,10 @@ const SettingsDrawer = ({ isOpen, onClose, onOpen }: SettingsDrawerProps) => {
                     dispatch({ type: "SET_SELECTED_MODEL", payload: model })
                   }
                 >
-                  <SelectTrigger className="w-full bg-[#35363a] border-[#ffffff0f]">
+                  <SelectTrigger className="w-full bg-[#18181B] border-[#ffffff0f]">
                     <SelectValue placeholder="Select model" />
                   </SelectTrigger>
-                  <SelectContent className="bg-[#35363a] border-[#ffffff0f]">
+                  <SelectContent className="bg-[#18181B] border-[#ffffff0f]">
                     {(state.availableModels || []).map((model) => (
                       <SelectItem key={model} value={model}>
                         {model}
@@ -187,7 +187,7 @@ const SettingsDrawer = ({ isOpen, onClose, onOpen }: SettingsDrawerProps) => {
                     <Button
                       variant="outline"
                       size="icon"
-                      className="h-10 w-10 bg-[#35363a] border-[#ffffff0f]"
+                      className="h-10 w-10 bg-[#18181B] border-[#ffffff0f]"
                       onClick={() => setIsModelConfigOpen(true)}
                     >
                       <Settings2 className="h-4 w-4" />
@@ -236,10 +236,10 @@ const SettingsDrawer = ({ isOpen, onClose, onOpen }: SettingsDrawerProps) => {
                         }
                         onValueChange={handleReasoningEffortChange}
                       >
-                        <SelectTrigger className="w-full bg-[#35363a] border-[#ffffff0f]">
+                        <SelectTrigger className="w-full bg-[#18181B] border-[#ffffff0f]">
                           <SelectValue placeholder="Select effort level" />
                         </SelectTrigger>
-                        <SelectContent className="bg-[#35363a] border-[#ffffff0f]">
+                        <SelectContent className="bg-[#18181B] border-[#ffffff0f]">
                           <SelectItem value="standard">Standard</SelectItem>
                           <SelectItem value="high">High-effort</SelectItem>
                         </SelectContent>
