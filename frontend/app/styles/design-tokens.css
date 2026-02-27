@@ -18,10 +18,11 @@
   --color-gray-800: oklch(0.145 0 0);
   --color-gray-900: oklch(0.05 0 0);
 
-  /* Brand Colors — A.I.M.S. Obsidian/Violet */
-  --color-brand-primary: oklch(0.541 0.281 293.009);   /* #8B5CF6 Violet */
-  --color-brand-secondary: oklch(0.702 0.183 293.541);  /* #A78BFA Violet Light */
-  --color-brand-gold: oklch(0.735 0.128 85.805);        /* #D4AF37 AIMS Gold */
+  /* Brand Colors — A.I.M.S. Gold/Amber */
+  --color-brand-primary: oklch(0.735 0.128 85.805);     /* #D4AF37 AIMS Gold */
+  --color-brand-secondary: oklch(0.700 0.155 68.000);   /* #D4881F Warm Amber */
+  --color-brand-accent: oklch(0.870 0.305 142.000);     /* #39FF14 Neon Green (Acheevy) */
+  --color-brand-cyan: oklch(0.750 0.120 210.000);       /* #4FC3F7 Holographic Cyan */
 
   /* Obsidian Surface Scale */
   --color-obsidian-base: oklch(0.129 0.004 285.823);    /* #09090B */
@@ -94,7 +95,7 @@
   --radius: var(--spacing-base);
 }
 
-/* Dark Theme Mapping — A.I.M.S. Obsidian */
+/* Dark Theme Mapping — A.I.M.S. Gold/Obsidian */
 .dark {
   /* Core UI Colors */
   --background: var(--color-obsidian-base);

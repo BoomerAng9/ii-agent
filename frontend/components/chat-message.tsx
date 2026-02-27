@@ -399,7 +399,7 @@ const ChatMessage = ({
                   <Button
                     variant="outline"
                     size="sm"
-                    className="cursor-pointer text-neutral-900 bg-gradient-skyblue-lavender hover:text-neutral-950"
+                    className="cursor-pointer text-neutral-900 bg-gradient-gold-amber hover:text-neutral-950"
                     onClick={handleReviewSession}
                   >
                     Review

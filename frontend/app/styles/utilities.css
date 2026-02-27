@@ -7,24 +7,24 @@
   }
   
   /* Gradient Utilities */
-  .bg-gradient-skyblue-lavender {
+  .bg-gradient-gold-amber {
     background: linear-gradient(
       0deg,
-      hsla(263, 90%, 66%, 1) 24%,
-      hsla(263, 70%, 76%, 1) 80%
+      hsla(43, 74%, 52%, 1) 24%,
+      hsla(35, 78%, 48%, 1) 80%
     );
   }
 
-  /* A.I.M.S. Violet Glow */
+  /* A.I.M.S. Gold Glow */
   .aims-glow {
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.15),
-                0 0 40px rgba(139, 92, 246, 0.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.20),
+                0 0 40px rgba(212, 175, 55, 0.08);
   }
 
   .aims-glass {
-    background: rgba(139, 92, 246, 0.05);
+    background: rgba(212, 175, 55, 0.06);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(212, 175, 55, 0.15);
   }
   
   /* Additional Gradient Presets */

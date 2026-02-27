@@ -56,7 +56,7 @@ const Terminal = (
         term.open(container);
         fitAddon.fit();
 
-        term.writeln(chalk.hex("#8B5CF6")("Welcome to A.I.M.S."));
+        term.writeln(chalk.hex("#D4AF37")("Welcome to A.I.M.S."));
         prompt(term);
 
         term.onKey(({ key, domEvent }) => {

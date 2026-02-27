@@ -513,7 +513,7 @@ export default function HomeContent() {
                       <Button
                         className={`cursor-pointer hover:!bg-black ${
                           state.activeTab === TAB.BROWSER
-                            ? "bg-gradient-skyblue-lavender !text-black"
+                            ? "bg-gradient-gold-amber !text-black"
                             : ""
                         }`}
                         variant="outline"
@@ -529,7 +529,7 @@ export default function HomeContent() {
                       <Button
                         className={`cursor-pointer hover:!bg-black ${
                           state.activeTab === TAB.CODE
-                            ? "bg-gradient-skyblue-lavender !text-black"
+                            ? "bg-gradient-gold-amber !text-black"
                             : ""
                         }`}
                         variant="outline"
@@ -545,7 +545,7 @@ export default function HomeContent() {
                       <Button
                         className={`cursor-pointer hover:!bg-black ${
                           state.activeTab === TAB.TERMINAL
-                            ? "bg-gradient-skyblue-lavender !text-black"
+                            ? "bg-gradient-gold-amber !text-black"
                             : ""
                         }`}
                         variant="outline"

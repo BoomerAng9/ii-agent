@@ -48,7 +48,7 @@ export const getFileIconAndColor = (fileName: string): FileIconInfo => {
     case "heic":
     case "svg":
       IconComponent = File;
-      bgColor = "bg-purple-500";
+      bgColor = "bg-amber-500";
       label = "Image";
       break;
     case "mp3":

@@ -1052,7 +1052,7 @@ const ApiKeysDialog = ({
                 </Button>
                 <Button
                   onClick={saveConfig}
-                  className="bg-gradient-skyblue-lavender"
+                  className="bg-gradient-gold-amber"
                   disabled={isSaving}
                 >
                   {isSaving ? "Saving..." : "Save Configuration"}
@@ -1379,7 +1379,7 @@ const ApiKeysDialog = ({
             </Button>
             <Button
               onClick={handleSaveConfig}
-              className="bg-gradient-skyblue-lavender"
+              className="bg-gradient-gold-amber"
               disabled={
                 selectedModel.model_name === "custom" && !customModelName.trim()
               }

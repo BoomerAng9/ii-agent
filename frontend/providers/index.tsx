@@ -18,7 +18,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
       <TooltipProvider>
         <ProgressBar
           height="2px"
-          color="#8B5CF6"
+          color="#D4AF37"
           options={{ showSpinner: false }}
           shallowRouting
         />

@@ -862,7 +862,7 @@ const QuestionInput = ({
                     }
                   }
                 }}
-                className="cursor-pointer !border !border-red p-4 size-10 font-bold bg-gradient-skyblue-lavender rounded-full hover:scale-105 active:scale-95 transition-transform shadow-[0_4px_10px_rgba(0,0,0,0.2)]"
+                className="cursor-pointer !border !border-red p-4 size-10 font-bold bg-gradient-gold-amber rounded-full hover:scale-105 active:scale-95 transition-transform shadow-[0_4px_10px_rgba(0,0,0,0.2)]"
               >
                 <ArrowUp className="size-5" />
               </Button>
