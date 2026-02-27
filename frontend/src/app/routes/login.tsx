@@ -203,11 +203,11 @@ export function LoginPage() {
 
     return (
         <div className="flex flex-col items-center justify-center w-full h-full">
-            <h1 className="text-[25px] md:text-[32px] font-semibold dark:text-sky-blue">
-                Welcome to II-Agent
+            <h1 className="text-[25px] md:text-[32px] font-semibold acheevy-gradient-text">
+                Welcome to ACHEEVY
             </h1>
-            <p className="text-[20px] md:text-[28px] dark:text-sky-blue mb-12">
-                Helping you with your task today
+            <p className="text-[20px] md:text-[28px] dark:text-grey-2 mb-12">
+                Your AI-powered build partner
             </p>
 
             <div className="flex flex-col w-full justify-center max-w-[510px]">
@@ -305,7 +305,7 @@ export function LoginPage() {
                 <Button
                     size="xl"
                     onClick={() => googleLogin()}
-                    className="w-full bg-white text-black font-semibold shadow-btn"
+                    className="w-full bg-white dark:bg-white/5 dark:border dark:border-acheevy-border text-black dark:text-white font-semibold shadow-btn dark:shadow-acheevy dark:hover:border-acheevy-purple/30 transition-all"
                 >
                     <Icon name="google" className="size-[22px]" />
                     Continue with Google Account
@@ -313,14 +313,14 @@ export function LoginPage() {
                 <Button
                     size="xl"
                     onClick={loginWithII}
-                    className="w-full mt-4 md:mt-10 bg-white text-black font-semibold shadow-btn"
+                    className="w-full mt-4 md:mt-10 acheevy-btn-primary font-semibold"
                 >
                     <img
                         src="/images/logo-charcoal.png"
                         alt="logo"
-                        className="size-[22px]"
+                        className="size-[22px] brightness-0 invert"
                     />
-                    Continue with II Account
+                    Continue with ACHEEVY Account
                 </Button>
             </div>
         </div>

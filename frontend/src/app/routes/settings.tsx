@@ -95,7 +95,7 @@ const Settings = () => {
                         alt="Logo"
                     />
                     <span className="text-black dark:text-white text-2xl font-semibold">
-                        II-Agent
+                        ACHEEVY
                     </span>
                 </div>
             </div>

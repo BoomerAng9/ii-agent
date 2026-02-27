@@ -260,7 +260,7 @@ const MessageContent = memo(
                                     className="w-full px-4 py-3 flex items-center justify-between text-left hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
                                 >
                                     <div className="flex items-center gap-2">
-                                        <div className="w-2 h-2 bg-firefly dark:bg-sky-blue rounded-full"></div>
+                                        <div className="w-2 h-2 bg-acheevy-purple rounded-full"></div>
                                         <span className="font-medium text-sm text-gray-700 dark:text-gray-300">
                                             Thought
                                         </span>

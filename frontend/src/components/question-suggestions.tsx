@@ -10,10 +10,10 @@ interface SuggestionsProps {
 
 const DEFAULT_SUGGESTIONS: Partial<Record<AGENT_TYPE, string[]>> = {
     [AGENT_TYPE.GENERAL]: [
-        'Build a landing page comparing AI coding assistants',
-        'Design cyberpunk mech poster with brand markings',
-        'Develop a responsive portfolio for generative art',
-        'Design an interactive climate metrics dashboard site'
+        'Build a SaaS dashboard with auth and billing',
+        'Clone superagent.com for real estate agents',
+        'Create a 3D landing page with scroll animations',
+        'Research top AI coding assistants with citations'
     ],
     [AGENT_TYPE.MEDIA]: [
         'Render cinematic perfume visuals on frosted glass',
@@ -23,17 +23,17 @@ const DEFAULT_SUGGESTIONS: Partial<Record<AGENT_TYPE, string[]>> = {
         'Draft surreal poster art for new headphones drop'
     ],
     [AGENT_TYPE.SLIDE]: [
-        'Build a B2B software sales deck',
+        'Build an investor pitch deck for an AI startup',
         'Create cybersecurity training slides',
-        'Draft a startup funding pitch deck',
+        'Draft a product launch update deck',
         'Explain AI impact on future work',
-        'Outline a product launch update deck'
+        'Outline a SaaS onboarding walkthrough'
     ],
     [AGENT_TYPE.WEBSITE_BUILD]: [
-        'Design an interactive climate metrics dashboard site',
-        'Build a landing page comparing AI coding assistants',
-        'Develop a responsive portfolio for generative art',
-        'Build a searchable support workflow knowledge base'
+        'Build a 3D hero landing page with glassmorphism',
+        'Create a multi-page portfolio with scroll animations',
+        'Develop a real-time metrics dashboard with charts',
+        'Build a searchable knowledge base with MDX'
     ]
 }
 

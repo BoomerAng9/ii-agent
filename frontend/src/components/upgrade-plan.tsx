@@ -53,7 +53,7 @@ const PLANS: Plan[] = [
     {
         id: SubscriptionPlan.Free,
         name: 'Free',
-        description: 'Try II-Agent',
+        description: 'Try ACHEEVY',
         prices: {
             monthly: 0,
             annually: 0

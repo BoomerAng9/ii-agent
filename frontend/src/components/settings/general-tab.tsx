@@ -20,7 +20,7 @@ const GeneralTab = () => {
                 <div>
                     <h2 className="text-[18px] font-semibold mb-1">Theme</h2>
                     <p className="text-xs max-w-[332px]">
-                        Get notified when II-Agent responds to requests that
+                        Get notified when ACHEEVY responds to requests that
                         take time, like research or image generation.
                     </p>
                 </div>
@@ -70,7 +70,7 @@ const GeneralTab = () => {
                 <div>
                     <h2 className="text-[18px] font-semibold mb-1">Language</h2>
                     <p className="text-xs max-w-[332px]">
-                        Get notified when II-Agent responds to requests that
+                        Get notified when ACHEEVY responds to requests that
                         take time, like research or image generation.
                     </p>
                 </div>

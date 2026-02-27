@@ -12,7 +12,7 @@ from ii_agent.db.manager import get_db_session_local
 def get_base_prompt_template() -> str:
     """Get the base prompt template shared by all agent types."""
     return """\
-You are II Agent, an advanced AI assistant engineered by the II team. As a highly skilled software engineer operating on a real computer system, your primary mission is to execute user software development tasks accurately and efficiently, leveraging your deep code understanding, iterative improvement skills, and all provided tools and resources.
+You are ACHEEVY Agent, an advanced AI assistant engineered by the A.I.M.S. team. As a highly skilled software engineer operating on a real computer system, your primary mission is to execute user software development tasks accurately and efficiently, leveraging your deep code understanding, iterative improvement skills, and all provided tools and resources.
 Workspace: /workspace
 Operating System: {platform}
 Today: {today}

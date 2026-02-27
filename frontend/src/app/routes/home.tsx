@@ -14,6 +14,8 @@ import ModelTag from '@/components/model-tag'
 import QuestionInput from '@/components/question-input'
 import RightSidebar from '@/components/right-sidebar'
 import Sidebar from '@/components/sidebar'
+import { PresetTasksGrid } from '@/components/acheevy/preset-tasks'
+import { NtNtNAnalyzer } from '@/components/acheevy/ntntn-analyzer'
 import { Button } from '@/components/ui/button'
 import { Icon } from '@/components/ui/icon'
 import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar'
@@ -152,8 +154,8 @@ function HomePageContent() {
                                         className="size-6 inline dark:hidden"
                                         alt="Logo"
                                     />
-                                    <span className="text-black dark:text-white text-sm font-semibold">
-                                        II-Agent
+                                    <span className="text-sm font-semibold acheevy-gradient-text">
+                                        Agent ACHEEVY-009
                                     </span>
                                     {ENABLE_BETA && (
                                         <span className="text-[10px] absolute -right-8 -top-1">
@@ -186,12 +188,15 @@ function HomePageContent() {
                 </div>
                 <div className="flex-1 py-12 px-3 md:px-[126px] pt-[110px] md:pt-0 flex md:items-center justify-center">
                     <div className="w-full max-w-[768px]">
-                        <p className="text-[25px] md:text-[32px] font-semibold dark:text-sky-blue">
+                        <p className="text-[25px] md:text-[32px] font-semibold acheevy-gradient-text">
                             Hello
                             {user?.first_name ? `, ${user?.first_name}` : ''}!
                         </p>
-                        <p className="text-[20px] md:text-2xl dark:text-sky-blue">
-                            What can I do for you today?
+                        <p className="text-[20px] md:text-2xl dark:text-grey-2">
+                            What shall we build today?
+                        </p>
+                        <p className="text-xs text-grey-2 mt-1 font-mono tracking-wider dark:text-acheevy-cyan/60">
+                            Agent ACHEEVY-009 &middot; NtNtN Engine Online
                         </p>
                         <div className="flex gap-x-2 mt-6 mb-2">
                             <ModelTag />
@@ -227,6 +232,16 @@ function HomePageContent() {
                             isGoogleDriveAuthLoading={isGoogleDriveAuthLoading}
                             googleDriveFiles={downloadedGoogleDriveFiles}
                             onGoogleDriveFilesHandled={clearDownloadedFiles}
+                        />
+                        <NtNtNAnalyzer
+                            inputText={currentQuestion}
+                            className="mt-3"
+                        />
+                        <PresetTasksGrid
+                            className="mt-8"
+                            onSelect={(prompt) => {
+                                dispatch(setCurrentQuestion(prompt))
+                            }}
                         />
                     </div>
                 </div>

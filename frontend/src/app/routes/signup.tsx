@@ -55,7 +55,7 @@ export function SignupPage() {
     return (
         <div className="flex flex-col items-center justify-center w-full h-full">
             <h1 className="text-[32px] font-semibold dark:text-sky-blue">
-                Welcome to II-Agent
+                Welcome to ACHEEVY
             </h1>
             <p className="text-[28px] dark:text-sky-blue mb-12">
                 Helping you with your task today

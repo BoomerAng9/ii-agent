@@ -396,11 +396,11 @@ const ChatMessage = ({
                 {isCompleted && (
                     <div className="flex flex-col gap-y-4">
                         <div className="flex">
-                            <div className="flex gap-x-2 items-center bg-sky-blue-2 text-black text-sm font-semibold px-4 py-2 rounded-full">
+                            <div className="flex gap-x-2 items-center bg-acheevy-emerald/20 text-acheevy-emerald dark:text-acheevy-emerald border border-acheevy-emerald/30 text-sm font-semibold px-4 py-2 rounded-full">
                                 <div className="flex gap-x-2 items-center">
                                     <Check className="size-5" />
                                     <span>
-                                        II-Agent has completed the task.
+                                        ACHEEVY has completed the task.
                                     </span>
                                 </div>
                             </div>
@@ -418,7 +418,7 @@ const ChatMessage = ({
                                     <div className="flex items-center gap-x-1.5 flex-1">
                                         <SearchCheck className="size-5 text-white" />
                                         <span className="text-neutral-100 flex-1 font-medium group-hover:text-white">
-                                            Allow II-Agent to review the results
+                                            Allow ACHEEVY to review the results
                                         </span>
                                     </div>
                                     <Button
@@ -437,10 +437,10 @@ const ChatMessage = ({
 
                 {isStopped && !isCompleted && (
                     <div className="flex items-center">
-                        <div className="flex items-center gap-x-[6px] py-2 px-4 bg-sky-blue-2 text-black rounded-full">
-                            <div className="size-3 bg-black m-1" />
+                        <div className="flex items-center gap-x-[6px] py-2 px-4 bg-acheevy-purple/20 text-acheevy-purple dark:text-acheevy-purple rounded-full border border-acheevy-purple/30">
+                            <div className="size-3 bg-acheevy-purple m-1 rounded-full" />
                             <span className="text-sm font-semibold">
-                                II-Agent has stopped
+                                ACHEEVY has stopped
                             </span>
                         </div>
                     </div>
@@ -484,7 +484,7 @@ const ChatMessage = ({
                                         <div className="h-2 w-2 bg-black dark:bg-white rounded-full"></div>
                                     </div>
                                     <span className="text-sm md:text-base dark:text-white">
-                                        II-Agent is replaying the task...
+                                        ACHEEVY is replaying the task...
                                     </span>
                                 </div>
                                 <div className="flex gap-2">

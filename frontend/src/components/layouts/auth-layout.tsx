@@ -15,7 +15,7 @@ export function AuthLayout() {
     }, [isAuthenticated, navigate])
 
     return (
-        <div className="flex flex-col h-screen justify-between px-3 md:px-6 pt-8 pb-12 overflow-auto">
+        <div className="flex flex-col h-screen justify-between px-3 md:px-6 pt-8 pb-12 overflow-auto acheevy-bg-gradient">
             <Link to="/" className="flex items-center gap-x-2 md:gap-x-3">
                 <img
                     src="/images/logo-only.png"
@@ -28,8 +28,8 @@ export function AuthLayout() {
                     alt="Logo"
                 />
                 <div className="relative">
-                    <span className="text-black dark:text-white text-lg md:text-2xl font-semibold">
-                        II-Agent
+                    <span className="text-lg md:text-2xl font-semibold acheevy-gradient-text">
+                        ACHEEVY
                     </span>
                     {ENABLE_BETA && (
                         <span className="text-[10px] absolute -right-8 -top-1">
@@ -43,14 +43,13 @@ export function AuthLayout() {
             </div>
             <div className="flex justify-center gap-x-10">
                 <Link
-                    to="https://www.ii.inc/web/terms-and-conditions"
-                    target="_blank"
+                    to="/terms-of-use"
                     className="dark:text-white text-sm font-semibold"
                 >
                     Terms of Use
                 </Link>
                 <Link
-                    to="https://www.ii.inc/web/privacy-policy"
+                    to="/privacy-policy"
                     target="_blank"
                     className="dark:text-white text-sm font-semibold"
                 >

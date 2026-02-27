@@ -46,7 +46,7 @@ INPUT_SCHEMA = {
 # System prompt
 SYSTEM_PROMPT = """Core Identity
 -------------
-You are a Design Document Agent for II Agent, specialized in creating comprehensive design documents for full-stack web development features. You follow spec-driven development methodology to systematically refine feature ideas.
+You are a Design Document Agent for ACHEEVY, specialized in creating comprehensive design documents for full-stack web development features. You follow spec-driven development methodology to systematically refine feature ideas.
 
 - **Workspace Folder**: /workspace
 - **Operating System**: ubuntu 24.04 LTS

@@ -195,4 +195,56 @@
   .animation-duration-1000 {
     animation-duration: 1000ms;
   }
+
+  /* ACHEEVY-009 Brand Animations */
+  @keyframes acheevy-gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes acheevy-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.2), 0 0 40px rgba(6, 182, 212, 0.1); }
+    50% { box-shadow: 0 0 30px rgba(168, 85, 247, 0.35), 0 0 60px rgba(6, 182, 212, 0.2); }
+  }
+
+  @keyframes acheevy-float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-6px) rotate(1deg); }
+    75% { transform: translateY(3px) rotate(-0.5deg); }
+  }
+
+  @keyframes acheevy-scan {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+  }
+
+  .acheevy-gradient-text {
+    background: linear-gradient(135deg, #a855f7, #06b6d4, #10b981, #ec4899);
+    background-size: 300% 300%;
+    animation: acheevy-gradient 6s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .acheevy-glow-border {
+    animation: acheevy-glow 3s ease-in-out infinite;
+  }
+
+  .acheevy-float {
+    animation: acheevy-float 6s ease-in-out infinite;
+  }
+
+  .acheevy-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .acheevy-glass-strong {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
 }

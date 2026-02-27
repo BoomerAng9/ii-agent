@@ -241,7 +241,7 @@ const AccountTab = () => {
             {plan !== SubscriptionPlan.Free && (
                 <div className="pt-4 md:pt-6 border-t border-black/30 dark:border-white/30">
                     <h2 className="text-[18px] font-semibold mb-2">
-                        {`II-Agent ${SUBSCRIPTION_PLANS[plan].name} Plan`}
+                        {`ACHEEVY ${SUBSCRIPTION_PLANS[plan].name} Plan`}
                     </h2>
                     <div className="space-y-4">
                         <p className="text-sm text-black dark:text-white">

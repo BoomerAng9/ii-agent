@@ -143,9 +143,9 @@ const Sidebar = ({ className, workspaceInfo }: SidebarButtonProps) => {
                             className="size-8 md:size-10 rounded-sm dark:hidden"
                         />
                         <span
-                            className={`text-black dark:text-white text-lg font-semibold`}
+                            className={`text-lg font-semibold acheevy-gradient-text`}
                         >
-                            II-Agent
+                            ACHEEVY
                         </span>
                         {ENABLE_BETA && (
                             <span className="text-[10px] absolute -right-8 -top-1">
@@ -188,9 +188,9 @@ const Sidebar = ({ className, workspaceInfo }: SidebarButtonProps) => {
                     className="rounded-sm dark:hidden"
                 />
                 <span
-                    className={`text-black dark:text-white text-2xl font-semibold`}
+                    className={`text-2xl font-semibold acheevy-gradient-text`}
                 >
-                    II-Agent
+                    ACHEEVY
                 </span>
                 {ENABLE_BETA && (
                     <span className="text-[10px] absolute -right-8 -top-1">
@@ -238,20 +238,20 @@ const Sidebar = ({ className, workspaceInfo }: SidebarButtonProps) => {
 
     return (
         <SidebarContainer
-            className={`bg-[#f8fafb]/30 dark:!bg-charcoal !border-grey-2/30 dark:!border-grey/30 ${className}`}
+            className={`bg-[#f8fafb]/30 dark:!bg-charcoal acheevy-sidebar !border-grey-2/30 dark:!border-acheevy-border ${className}`}
         >
             <SidebarHeader>{header}</SidebarHeader>
             <SidebarContent ref={scrollContainerRef}>
                 <SidebarMenu>
                     <div className="px-3 md:px-6 pb-6">
                         <Button
-                            className="bg-firefly dark:bg-sky-blue w-full !text-sky-blue dark:!text-black"
+                            className="acheevy-btn-primary w-full !text-white"
                             size="xl"
                             onClick={handleNewChat}
                         >
                             <Icon
                                 name="edit"
-                                className="fill-sky-blue dark:fill-black"
+                                className="fill-white"
                             />{' '}
                             New chat
                         </Button>
@@ -285,7 +285,7 @@ const Sidebar = ({ className, workspaceInfo }: SidebarButtonProps) => {
                                 onOpenChange={setIsCollapsibleOpen}
                             >
                                 <CollapsibleTrigger className="w-full">
-                                    <div className="w-full justify-start !h-9 !text-[14px] !px-4 rounded-xl cursor-pointer border border-black dark:border-white flex items-center">
+                                    <div className="w-full justify-start !h-9 !text-[14px] !px-4 rounded-xl cursor-pointer border border-acheevy-purple/20 dark:border-acheevy-purple/25 flex items-center hover:border-acheevy-purple/40 transition-colors">
                                         <div className="flex items-center gap-x-2 flex-1">
                                             <Icon
                                                 name="message-minus"

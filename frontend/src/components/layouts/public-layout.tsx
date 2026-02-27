@@ -15,7 +15,7 @@ export function PublicLayout() {
                     alt="Logo"
                 />
                 <span className="text-black dark:text-white text-2xl font-semibold">
-                    II-Agent
+                    ACHEEVY
                 </span>
             </Link>
             <div className="flex-1">
@@ -23,14 +23,13 @@ export function PublicLayout() {
             </div>
             <div className="flex justify-center gap-x-10">
                 <Link
-                    to="https://www.ii.inc/web/terms-and-conditions"
-                    target="_blank"
+                    to="/terms-of-use"
                     className="dark:text-white text-sm font-semibold"
                 >
                     Terms of Use
                 </Link>
                 <Link
-                    to="https://www.ii.inc/web/privacy-policy"
+                    to="/privacy-policy"
                     target="_blank"
                     className="dark:text-white text-sm font-semibold"
                 >

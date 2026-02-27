@@ -38,8 +38,8 @@ const Credit = () => {
     if (isLoading) return null
 
     return (
-        <div className="hidden md:flex flex-col items-start gap-y-4 p-6 pb-8 border-t border-grey-2/30 dark:border-white/30">
-            <p className="text-xs font-semibold text-sky-blue dark:text-black bg-firefly dark:bg-sky-blue px-2 h-[22px] rounded-full flex items-center">
+        <div className="hidden md:flex flex-col items-start gap-y-4 p-6 pb-8 border-t border-grey-2/30 dark:border-acheevy-border">
+            <p className="text-xs font-semibold text-white bg-acheevy-purple px-2 h-[22px] rounded-full flex items-center">
                 {subscriptionPlan
                     ? `${SUBSCRIPTION_PLANS[subscriptionPlan]?.name} Plan`
                     : 'Free Plan'}
@@ -48,13 +48,13 @@ const Credit = () => {
                 <div className="flex gap-x-2 cursor-default">
                     <Icon
                         name="coin"
-                        className="fill-firefly dark:fill-white"
+                        className="fill-firefly dark:fill-acheevy-cyan"
                     />
                     <div>
                         <div>
                             <Link
                                 to="/settings/usage"
-                                className="font-bold text-firefly dark:text-sky-blue hover:underline"
+                                className="font-bold text-firefly dark:text-acheevy-cyan hover:underline"
                             >
                                 {formatCredit(Math.round(totalCredit))}
                             </Link>
@@ -72,12 +72,12 @@ const Credit = () => {
                         <Button
                             variant="outline"
                             size="xl"
-                            className="w-full border-firefly text-firefly dark:border-sky-blue dark:text-sky-blue"
+                            className="w-full acheevy-btn-secondary"
                             onClick={handleGotoSubscription}
                         >
                             <Icon
                                 name="edit"
-                                className="size-5 fill-firefly dark:fill-sky-blue"
+                                className="size-5 fill-acheevy-purple"
                             />
                             Upgrade Plan
                         </Button>
