@@ -1,0 +1,55 @@
+# Docker Compose overlay for running ii-agent as a service alongside AIMS.
+#
+# Usage (from the ii-agent repo root):
+#   docker compose -f docker-compose.yaml -f integrations/aims/docker-compose.aims.yaml up
+#
+# This overlay:
+#   1. Puts ii-agent services on the "aims" network so AIMS containers can reach them
+#   2. Exposes ii-agent backend on port 8000 (configurable via II_AGENT_PORT)
+#   3. Does NOT start ii-agent's own frontend (AIMS provides the UI)
+#
+# In AIMS's own docker-compose, add:
+#   networks:
+#     aims:
+#       external: true
+#
+# Then AIMS's UEF Gateway can reach ii-agent at: http://ii-agent-backend:8000
+
+services:
+  # Override: disable ii-agent's own frontend (AIMS provides the UI)
+  frontend:
+    profiles:
+      - standalone-only
+
+  # Override: put backend on the shared network and give it a stable hostname
+  backend:
+    container_name: ii-agent-backend
+    ports:
+      - "${II_AGENT_PORT:-8000}:8000"
+      - "${CODE_SERVER_PORT:-9000}:${CODE_SERVER_PORT:-9000}"
+    networks:
+      - ii
+      - aims
+    # Health check so AIMS can wait for readiness
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/settings')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  sandbox:
+    networks:
+      - ii
+      - aims
+
+  nginx:
+    networks:
+      - ii
+      - aims
+
+networks:
+  ii:
+  aims:
+    name: aims
+    driver: bridge
